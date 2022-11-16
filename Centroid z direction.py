@@ -26,5 +26,5 @@ Spar_re_A = Var.Spar_re_len*Var.Spar_re_th
 Sheet_top_A = Var.Sheet_top_len*Var.Sheet_top_th
 Sheet_bottom_A = Var.Sheet_bottom_len*Var.Sheet_bottom_th
 
-sum_of_products = 0
+sum_of_products = 5
 
