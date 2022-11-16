@@ -33,6 +33,12 @@ sum_of_products_Str_bottom = 0
 for i in range(int(Var.Str_N / 2)):
     sum_of_products_Str_bottom += z_tilda_Str_bottom[i] * Var.Str_A
 
-sum_of_products_Spar = 0
+sum_of_products_Spar = z_tilda_Spar_fr * Spar_fr_A + z_tilda_Spar_re * Spar_re_A
+
+sum_of_products_Sheet = z_tilda_Sheet_top * Sheet_top_A + z_tilda_Sheet_bottom * Sheet_bottom_A
+
+sum_of_products = sum_of_products_Sheet + sum_of_products_Spar + sum_of_products_Str_bottom + sum_of_products_Str_top
+
+print(sum_of_products)
 
 
