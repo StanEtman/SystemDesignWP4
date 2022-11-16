@@ -3,7 +3,7 @@
 #input parameters
 
 #stringers
-Str_A = 0
+Str_A = 2
 Str_N = 6
 
 #spars
@@ -16,7 +16,7 @@ Spar_re_len = 0.7
 #sheets
 Sheet_top_th = 0.2
 Sheet_top_len = 2
-Sheet_top_angle = 0
+Sheet_top_angle = 0.3
 
 Sheet_bottom_th = 0.25
 Sheet_bottom_len = 2.5
