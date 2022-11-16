@@ -14,6 +14,7 @@ x_tilda_Sheet_bottom = Var.Sheet_bottom_len/2 * cos(Var.Sheet_bottom_angle)
 x_tilda_Str_bottom = []
 x_tilda_Str_top = []
 
+
 #bottom
 for i in range(int(Var.Str_N/2)):
     x_tilda_Str_bottom.append( (Str_dis_bottom * (i+1)) * cos(Var.Sheet_bottom_angle))
