@@ -39,6 +39,6 @@ sum_of_products_Sheet = z_tilda_Sheet_top * Sheet_top_A + z_tilda_Sheet_bottom *
 
 sum_of_products = sum_of_products_Sheet + sum_of_products_Spar + sum_of_products_Str_bottom + sum_of_products_Str_top
 
-print(sum_of_products)
+z_centroid = sum_of_products / total_area
 
-
+print(z_centroid)
