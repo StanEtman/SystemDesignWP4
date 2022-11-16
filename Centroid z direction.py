@@ -18,13 +18,27 @@ for i in range(int(Var.Str_N / 2)):
 z_tilda_Str_top = []
 for i in range(int(Var.Str_N / 2)):
     z_tilda_Str_P = Str_dis_top * (i+1) * math.sin(Var.Sheet_top_angle)
-    z_tilda_Str_bottom.append(z_tilda_Str_P)
-
+    z_tilda_Str_top.append(z_tilda_Str_P)
 
 Spar_fr_A = Var.Spar_fr_len*Var.Spar_fr_th
 Spar_re_A = Var.Spar_re_len*Var.Spar_re_th
 Sheet_top_A = Var.Sheet_top_len*Var.Sheet_top_th
 Sheet_bottom_A = Var.Sheet_bottom_len*Var.Sheet_bottom_th
 
-sum_of_products = 5
+sum_of_products_Str_top = 0
+for i in range(int(Var.Str_N / 2)):
+    sum_of_products_Str_top += z_tilda_Str_top[i] * Var.Str_A
+
+sum_of_products_Str_bottom = 0
+for i in range(int(Var.Str_N / 2)):
+    sum_of_products_Str_bottom += z_tilda_Str_bottom[i] * Var.Str_A
+
+sum_of_products_Spar = z_tilda_Spar_fr * Spar_fr_A + z_tilda_Spar_re * Spar_re_A
+
+sum_of_products_Sheet = z_tilda_Sheet_top * Sheet_top_A + z_tilda_Sheet_bottom * Sheet_bottom_A
+
+sum_of_products = sum_of_products_Sheet + sum_of_products_Spar + sum_of_products_Str_bottom + sum_of_products_Str_top
+
+print(sum_of_products)
+
 
